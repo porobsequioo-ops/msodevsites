@@ -120,7 +120,7 @@
 <div class="fixed inset-0 z-[-1] code-grid pointer-events-none"></div>
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/10 shadow-sm transition-all duration-300 ease-in-out">
-<div class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between md:justify-center items-center h-16 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 
 <!-- Mobile Menu Button -->
 <button class="md:hidden text-primary focus:outline-none">
@@ -129,7 +129,6 @@
 <!-- Desktop Nav -->
 <nav class="hidden md:flex items-center gap-8">
 <a class="text-on-surface hover:text-secondary transition-colors font-button-text uppercase tracking-widest text-sm" href="#servicos">Serviços</a>
-<a class="text-on-surface hover:text-secondary transition-colors font-button-text uppercase tracking-widest text-sm" href="#portfolio">Portfólio</a>
 <a class="text-on-surface hover:text-secondary transition-colors font-button-text uppercase tracking-widest text-sm" href="#sobre">Sobre</a>
 <a class="text-on-surface hover:text-secondary transition-colors font-button-text uppercase tracking-widest text-sm" href="#contato">Contato</a>
 <a class="bg-gradient-to-r from-primary to-secondary text-on-primary font-button-text px-6 py-2 rounded uppercase tracking-widest hover:brightness-110 transition-all shadow-[0_0_10px_rgba(174,198,255,0.3)]" href="#contato">Orçamento</a>
@@ -159,8 +158,8 @@
 <span class="material-symbols-outlined text-sm">rocket_launch</span>
                     Iniciar Projeto
                 </a>
-<a class="w-full sm:w-auto border border-primary text-primary font-button-text px-8 py-3 rounded uppercase tracking-widest hover:bg-primary/10 transition-all text-center" href="#portfolio">
-                    Ver Portfólio
+<a class="w-full sm:w-auto border border-primary text-primary font-button-text px-8 py-3 rounded uppercase tracking-widest hover:bg-primary/10 transition-all text-center" href="#sobre">
+                    Saber Mais
                 </a>
 </div>
 </section>
@@ -235,16 +234,16 @@
 <h2 class="font-headline-lg-mobile text-3xl text-white">Vamos conversar?</h2>
 <p class="font-body-md text-on-surface-variant text-sm">Inicie seu projeto com a MSO.</p>
 </div>
-<form class="glass-panel p-6 rounded-xl flex flex-col gap-4">
+<form id="contact-form" class="glass-panel p-6 rounded-xl flex flex-col gap-4">
 <div class="flex flex-col gap-1">
 <label class="font-code-label text-xs text-primary ml-1">Nome</label>
-<input class="bg-surface-container-highest border border-white/10 rounded px-4 py-3 text-white font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary transition-all outline-none" placeholder="Seu nome" type="text">
+<input id="contact-name" required class="bg-surface-container-highest border border-white/10 rounded px-4 py-3 text-white font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary transition-all outline-none" placeholder="Seu nome" type="text">
 </div>
 <div class="flex flex-col gap-1">
 <label class="font-code-label text-xs text-primary ml-1">WhatsApp</label>
-<input class="bg-surface-container-highest border border-white/10 rounded px-4 py-3 text-white font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary transition-all outline-none" placeholder="(00) 00000-0000" type="tel">
+<input id="contact-phone" required class="bg-surface-container-highest border border-white/10 rounded px-4 py-3 text-white font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary transition-all outline-none" placeholder="(00) 00000-0000" type="tel">
 </div>
-<button class="mt-2 bg-gradient-to-r from-primary to-secondary text-on-primary font-button-text px-6 py-4 rounded uppercase tracking-widest hover:brightness-110 transition-all flex justify-center items-center gap-2" type="button">
+<button class="mt-2 bg-gradient-to-r from-primary to-secondary text-on-primary font-button-text px-6 py-4 rounded uppercase tracking-widest hover:brightness-110 transition-all flex justify-center items-center gap-2" type="submit">
 <span class="material-symbols-outlined text-lg">send</span>
                     Solicitar Orçamento
                 </button>
@@ -252,7 +251,7 @@
 </section>
 </main>
 <!-- Floating WhatsApp Button -->
-<a class="fixed bottom-6 right-6 md:bottom-12 md:right-12 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 group" href="#">
+<a class="fixed bottom-6 right-6 md:bottom-12 md:right-12 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300 group" href="https://wa.me/5521971679462?text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20meu%20site." target="_blank" rel="noopener noreferrer">
 <span class="material-symbols-outlined text-3xl">chat</span>
 <!-- Ping effect -->
 <span class="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-75 group-hover:hidden"></span>
@@ -269,7 +268,7 @@
             </p>
 <div class="flex gap-6 font-body-md text-sm">
 <a class="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">Instagram</a>
-<a class="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">WhatsApp</a>
+<a class="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="https://wa.me/5521971679462?text=Ol%C3%A1!%20Vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20para%20meu%20site." target="_blank" rel="noopener noreferrer">WhatsApp</a>
 <a class="text-on-surface-variant hover:text-primary transition-opacity opacity-80 hover:opacity-100" href="#">LinkedIn</a>
 </div>
 </div>
@@ -282,4 +281,13 @@
 
 
 
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('contact-name').value;
+    const text = `Olá! Meu nome é ${name}. Vim do site e gostaria de fazer um orçamento para meu site.`;
+    const url = `https://wa.me/5521971679462?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+});
+</script>
 </body></html>
